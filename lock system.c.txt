@@ -1,0 +1,50 @@
+#include<stdio.h>
+
+int main()
+{
+    int i,num;
+    printf("Enter the number of items:");
+    scanf("%d",&num);
+
+    for(i=1;i<=num;i++)
+    { 
+        int op,qnt,total,grd_total=0;
+        printf("Enter the item:");
+        scanf("%d",&op);
+
+        if (op==1)
+        {
+            printf("Enter the quantity:");
+            scanf("%d",&qnt);
+            total = 180*qnt;
+        
+        }
+        else if (op==2)
+        {
+            printf("Enter the quantity:");
+            scanf("%d",&qnt);
+            total = 150*qnt;
+        }
+        else if (op==3)
+        {
+            printf("Enter the quantity:");
+            scanf("%d",&qnt);
+            total = 100*qnt;
+        }
+        else if (op==4)
+        {
+            printf("Enter the quantity:");
+            scanf("%d",&qnt);
+            total = 120*qnt;
+        }
+        else if (op==5)
+        {
+            printf("Enter the quantity:");
+            scanf("%d",&qnt);
+            total = 80*qnt;
+        }
+
+        grd_total = grd_total+total;
+    }
+    return 0;
+}
